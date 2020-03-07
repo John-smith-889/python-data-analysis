@@ -26,3 +26,17 @@ Output:
 	target variables training set ndarray,
 	target variables test set ndarray
 """
+
+
+#=============================================================================#
+# Classification #
+#================#
+
+from xgboost import XGBClassifier
+
+# Create and fit XGBoost model
+model_01 = XGBClassifier()
+model_01.fit(train_X, train_target)
+
+# Predict values on test set
+Y_pred_01 = model_01.predict(test_X)
