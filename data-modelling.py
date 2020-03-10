@@ -56,7 +56,20 @@ for i in range(0,len(unique)):
 # categories are printed in order of future confusion matrix
 
 
+#=========================#
+# Create confusion matrix #
+#=========================#
 
+confusion_matrix(target_test, Y_pred_01)
+
+"""
+As we may see in the matrix:
+    1) row 1, column 1 - number of observations of category 1 classified as category 1
+    2) row 2, column 2 - number of observations of category 2 classified as category 2
+    3) row 3, column 3 - number of observations of category 3 classified as category 3
+    4) etc.
+    
+"""
 
 
 
