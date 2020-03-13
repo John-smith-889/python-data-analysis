@@ -32,6 +32,11 @@ Output:
 # Classification #
 #================#
 
+#=========#
+# XGBoost #
+#=========#
+# Good for small to medium datasets
+
 from xgboost import XGBClassifier
 
 # Create and fit XGBoost model
@@ -40,6 +45,23 @@ model_01.fit(train_X, train_target)
 
 # Predict values on test set
 Y_pred_01 = model_01.predict(test_X)
+
+
+#=====#
+# SVM #
+#=====#
+# Good for NLP datasets
+
+from sklearn.svm import LinearSVC
+
+# Create instance of linear support vector classifier from Sci-kit learn
+model_02 = LinearSVC()
+
+# training the model
+model_02.fit(train_X, train_target)
+
+# Predict values on test set
+Y_pred_02 = model_02.predict(test_X)
 
 
 
