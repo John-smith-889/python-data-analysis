@@ -10,6 +10,8 @@ Process is dedicated for data in pandas DataFrame format.
 # Data cleaning #
 #===============#
 
+import pandas as pd
+
 #==========================#
 # Check for variable types #
 #==========================#
