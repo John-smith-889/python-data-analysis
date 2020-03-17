@@ -28,6 +28,23 @@ Output:
 	target variables test set ndarray
 """
 
+#=============================================================================#
+# Regression #
+#============#
+
+#===================#
+# Linear regression #
+#===================#
+
+from sklearn.linear_model import LinearRegression
+
+# Create and fit linear model
+model_01 = LinearRegression().fit(train_X, train_target)
+
+# Predict values on test set
+Y_pred_01 = model_01.predict(test_X)
+
+
 
 #=============================================================================#
 # Classification #
