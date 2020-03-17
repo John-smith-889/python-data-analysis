@@ -45,6 +45,20 @@ model_01 = LinearRegression().fit(train_X, train_target)
 Y_pred_01 = model_01.predict(test_X)
 
 
+#=========#
+# XGBoost #
+#=========#
+# Good for small to medium datasets
+
+# Create and fit XGBoost model
+model_02 = XGBRegressor()
+model_01.fit(train_X, train_target)
+
+# Predict values on test set
+Y_pred_02 = model_01.predict(test_X)
+
+
+
 
 #=============================================================================#
 # Classification #
