@@ -52,10 +52,23 @@ Y_pred_01 = model_01.predict(test_X)
 
 # Create and fit XGBoost model
 model_02 = XGBRegressor()
-model_01.fit(train_X, train_target)
+model_02.fit(train_X, train_target)
 
 # Predict values on test set
-Y_pred_02 = model_01.predict(test_X)
+Y_pred_02 = model_02.predict(test_X)
+
+
+#=====#
+# SVM #
+#=====#
+
+from sklearn.svm import SVR
+
+# Create and fit SVM regressor model
+model_04 = SVR(kernel='rbf').fit(train_X, train_target)
+
+# Predict values on test set
+Y_pred_04 = model_04.predict(test_X)
 
 
 
