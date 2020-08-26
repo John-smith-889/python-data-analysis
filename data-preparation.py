@@ -10,14 +10,16 @@ Process is dedicated for data in pandas DataFrame format.
 # Data cleaning #
 #===============#
 
-import pandas as pd
-
 #==========================#
 # Check for variable types #
 #==========================#
 
+# Download data into pandas df
+import pandas as pd
+dataframe_01 = pd.read_csv("numbers3.csv")
+
 # Show number of observations in particulars columns, null, type of column
-df.info() 
+dataframe_01.info() 
 
 """
 
@@ -32,18 +34,20 @@ nan detection - there is number of observations pointed out, if number is
 
 """
 
-#===============================#
-# Check NULL values in a column #
-#===============================#
+#==============================#
+# Check NAN values in a column #
+#==============================#
+
+import numpy as np
 
 dict_01 = {'one': ['A', 'B', 'C', 'D'], 
               'two': [1, 2 , np.nan, 4], 
               'three': ['a', 'b', 'c', 'd']}
-dataframe_01 = pd.DataFrame(dict_01)
+dataframe_02 = pd.DataFrame(dict_01)
 
 
 # Check how many NULL values is in df
-pd.isnull(dataframe_01['two']).sum()
+pd.isnull(dataframe_02['two']).sum()
 
 
 #====================================#
