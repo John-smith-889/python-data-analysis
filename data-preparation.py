@@ -51,6 +51,14 @@ pd.isnull(dataframe_02['two']).sum()
 
 
 #====================================#
+# Change NAN values into given value #
+#====================================#
+# Value may be numeric or string
+
+dataframe_02 = dataframe_02.fillna(0)
+
+
+#====================================#
 # Check for min and max values, etc. #
 #====================================#
 # Check if values are as expected, if there are certain assumptions
