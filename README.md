@@ -15,4 +15,4 @@ It contains modelling techniques selection, test design, model building and mode
 To do:
 
 *data-understanding.py - Data understanding is 2nd phase of data analysis according to CRISP-DM.
-It contains data collection, describtion, exploration, and quality verification.
+It contains data collection, describtion, exploration, and quality verification. (.ipynb file?)
